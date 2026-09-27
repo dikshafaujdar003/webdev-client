@@ -23,7 +23,6 @@ export default function HeadingTags() {
       <h5>h5</h5>
       <h6>h6</h6>
 
-      {/* With AI: sample outline after the practice headings */}
       <div id="wd-ai-headings">
         <h4>Lab notes</h4>
         <p>A short placeholder summary of what this lab covers.</p>
@@ -33,7 +32,6 @@ export default function HeadingTags() {
         <p>Placeholder sentence describing what comes next.</p>
       </div>
 
-      {/* On your own: personal heading */}
       <div id="wd-your-heading">
         <h4>Diksha Faujdar</h4>
         I am a graduate student at Northeastern pursuing Masters in Data science at Khoury college.{" "}

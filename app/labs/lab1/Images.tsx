@@ -24,9 +24,9 @@ export default function Images() {
       <br />
       <img
         id="wd-your-image"
-        src="https://placehold.co/300x200?text=Boston+Skyline"
+        src="https://images.prismic.io/ocean-agency-cms/aRXUmrpReVYa4bjH_OceanImageBank_LarsvonRitterZahony_12_OceanImageBankcover.jpg"
         width="300px"
-        alt="Boston skyline near Northeastern University"
+        alt="Underwater Wildlife"
       />
       <br />
       With AI: extra sample image:

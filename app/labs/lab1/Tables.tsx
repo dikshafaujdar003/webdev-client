@@ -30,7 +30,6 @@ export default function Tables() {
             <td align="center">2/17/21</td>
             <td align="right">95</td>
           </tr>
-          {/* With AI: rows Q4-Q10 appended, keeping the same align pattern */}
           <tr>
             <td>Q4</td>
             <td align="center">React</td>
@@ -76,8 +75,7 @@ export default function Tables() {
         </tbody>
         <tfoot>
           <tr>
-            {/* Average recalculated from all ten scores:
-                (85+90+95+88+92+80+91+87+94+89) / 10 = 89.1 */}
+
             <td colSpan={3}>Average</td>
             <td align="right">89.1</td>
           </tr>

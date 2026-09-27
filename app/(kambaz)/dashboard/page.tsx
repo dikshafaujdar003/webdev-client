@@ -7,7 +7,7 @@ export default function Dashboard() {
       <h2 id="wd-dashboard-published">Published Courses (3)</h2> <hr />
       <div id="wd-dashboard-courses">
         <CourseCard
-        id="5610"
+        id="1234"
          title="CS5610 Web Development"
          subtitle="Full stack development with React and Next.js"
          image="/images/cs5610.jpg"
