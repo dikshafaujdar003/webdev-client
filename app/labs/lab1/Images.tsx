@@ -32,10 +32,10 @@ export default function Images() {
       With AI: extra sample image:
       <br />
       <img
-        id="wd-ai-image"
-        src="https://www.nasa.gov/wp-content/uploads/2023/03/pia25476.jpg"
-        width="200px"
-        alt="Sample NASA image"
+      id="wd-ai-image"
+      src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg"
+      width="200px"
+      alt="Earth seen from Apollo 17 (NASA)"
       />
     </div>
   );
