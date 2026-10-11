@@ -41,12 +41,12 @@ export default function Float() {
         <div className="wd-float-done" />
         {/* On my own 2.1.17 */}
         <div>
-        <div id="wd-your-float" className="wd-float-left wd-dimension-portrait wd-bg-color-red wd-fg-color-white">
-        My box, floated left this time. On my own 2.1.17
-       </div>
-  {LOREM}
-  <div className="wd-float-done" />
-</div>
+          <div id="wd-your-float" className="wd-float-left wd-dimension-portrait wd-bg-color-red wd-fg-color-white">
+            My box, floated left this time.
+          </div>
+          {LOREM}
+          <div className="wd-float-done" />
+        </div>
       </div>
     </div>
   );

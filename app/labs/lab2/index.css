@@ -203,6 +203,11 @@ p#wd-your-cascade {
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
 }
+/* On my own 2.1.11 */
+.wd-your-rounded {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
 
 /* ===== 2.1.12 Dimensions and display ===== */
 .wd-dimension-portrait {

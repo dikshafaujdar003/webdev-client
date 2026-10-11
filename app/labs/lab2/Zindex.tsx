@@ -20,10 +20,10 @@ export default function Zindex() {
         </div>
         {/* On my own 2.1.16 */}
         <div
-        id="wd-your-zindex"
-        className="wd-your-zindex wd-pos-absolute-50-50 wd-bg-color-red wd-fg-color-white wd-dimension-square"
+          id="wd-your-zindex"
+          className="wd-your-zindex wd-pos-absolute-50-50 wd-bg-color-red wd-fg-color-white wd-dimension-square"
         >
-         My layer 2.1.16
+          My layer
         </div>
       </div>
       <br /><br /><br /><br /><br /><br /><br />

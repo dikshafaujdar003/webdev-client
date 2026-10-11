@@ -17,8 +17,14 @@ export default function Padding() {
       >
         Padded on top only
       </div>
-      <div className="wd-padding-top-only wd-border-fat wd-border-red wd-border-solid wd-bg-color-yellow">
-      on my own 2.1.10
+      {/* On my own 2.1.10 */}
+      <div
+        id="wd-your-padded"
+        className="wd-padding-fat wd-border-fat wd-border-blue wd-border-solid wd-bg-color-green wd-fg-color-white"
+      >
+        This is my own box, padded fat all around using the same padding
+        class as the earlier example, just with different border and
+        background colors.
       </div>
     </div>
   );

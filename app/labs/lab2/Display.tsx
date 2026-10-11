@@ -33,8 +33,10 @@ export default function Display() {
           This div is forced to display: inline, so its 150px width is ignored
         </div>
         {/* On my own 2.1.12 */}
-        <div id="wd-your-display" className="wd-display-inline wd-bg-color-red wd-fg-color-white">
-         on my own 2.1.12
+        <div id="wd-your-display" className="wd-display-block wd-bg-color-red wd-fg-color-white">
+          This is my own box, forced to display: block instead, so it drops
+          onto its own line and keeps its full 150px width, unlike the
+          inline example above it.
         </div>
       </div>
     </div>

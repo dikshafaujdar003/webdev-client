@@ -31,8 +31,11 @@ export default function Lab2() {
         element. Although it&apos;s very convenient it is considered bad
         practice and you should avoid using the style attribute
       </p>
+      {/* On my own 2.1.1 */}
       <p style={{ backgroundColor: "green", color: "yellow" }}>
-        On my own 2.1.1 
+        This is my own paragraph using the style attribute directly, with a
+        green background and yellow text, just to show I can set it inline
+        even though it&apos;s not best practice.
       </p>
 
       <div id="wd-css-id-selectors">
