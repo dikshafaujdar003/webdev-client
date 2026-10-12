@@ -34,7 +34,7 @@ export default function Labs() {
           </Link>
         </li>
       </ul>
-      <a href="https://github.com/dikshafaujdar003" id="wd-github">
+      <a href="https://github.com/dikshafaujdar003/webdev-client" id="wd-github">
         GitHub Repository
       </a>
     </div>
