@@ -13,19 +13,16 @@ import "@/app/labs/lab2/tailwind/utilities.css";
 
 export default function KambazNavigation() {
   const pathname = usePathname() ?? "";
-
-  const idle =
-    "block bg-black py-3 text-center text-sm text-white no-underline";
-  const active =
-    "block bg-white py-3 text-center text-sm text-red-600 no-underline";
-
-  const tile = (href: string) =>
-    pathname === href || pathname.startsWith(href + "/") ? active : idle;
-
-  const iconColor = (href: string) =>
-    pathname === href || pathname.startsWith(href + "/")
-      ? "text-red-600"
-      : "text-red-500";
+  const links = [
+    { label: "Account", path: "/account", match: "/account", icon: FaRegCircleUser },
+    { label: "Dashboard", path: "/dashboard", match: "/dashboard", icon: AiOutlineDashboard },
+    { label: "Courses", path: "/dashboard", match: "/courses", icon: FaBookOpen },
+    { label: "Calendar", path: "/calendar", match: "/calendar", icon: FaRegCalendar },
+    { label: "Inbox", path: "/inbox", match: "/inbox", icon: FaInbox },
+    { label: "Labs", path: "/labs", match: "/labs", icon: FaFlask },
+  ];
+  const isActive = (match: string) =>
+    pathname === match || pathname.startsWith(match + "/");
 
   return (
     <nav
@@ -41,48 +38,28 @@ export default function KambazNavigation() {
       >
         Northeastern
       </a>
-      <Link href="/account" id="wd-account-link" className={tile("/account")}>
-        <FaRegCircleUser className="inline-block text-3xl text-white" />
-        <br />
-        Account
-      </Link>
-      <Link
-        href="/dashboard"
-        id="wd-dashboard-link"
-        className={tile("/dashboard")}
-      >
-        <AiOutlineDashboard
-          className={`inline-block text-3xl ${iconColor("/dashboard")}`}
-        />
-        <br />
-        Dashboard
-      </Link>
-      <Link href="/dashboard" id="wd-course-link" className={idle}>
-        <FaBookOpen className="inline-block text-3xl text-red-500" />
-        <br />
-        Courses
-      </Link>
-      <Link
-        href="/calendar"
-        id="wd-calendar-link"
-        className={tile("/calendar")}
-      >
-        <FaRegCalendar
-          className={`inline-block text-3xl ${iconColor("/calendar")}`}
-        />
-        <br />
-        Calendar
-      </Link>
-      <Link href="/inbox" id="wd-inbox-link" className={tile("/inbox")}>
-        <FaInbox className={`inline-block text-3xl ${iconColor("/inbox")}`} />
-        <br />
-        Inbox
-      </Link>
-      <Link href="/labs" id="wd-labs-link" className={tile("/labs")}>
-        <FaFlask className={`inline-block text-3xl ${iconColor("/labs")}`} />
-        <br />
-        Labs
-      </Link>
+      {links.map(({ label, path, match, icon: Icon }) => {
+        const active = isActive(match);
+        return (
+          <Link
+            key={label}
+            href={path}
+            id={`wd-${label.toLowerCase()}-link`}
+            aria-current={active ? "page" : undefined}
+            className={`block py-3 text-center text-sm no-underline ${
+              active ? "active bg-white text-red-600" : "bg-black text-white"
+            }`}
+          >
+            <Icon
+              className={`inline-block text-3xl ${
+                label === "Account" ? (active ? "text-neutral-500" : "text-white") : "text-red-600"
+              }`}
+            />
+            <br />
+            {label}
+          </Link>
+        );
+      })}
     </nav>
   );
 }

@@ -33,6 +33,11 @@ export default function Labs() {
             Kambaz
           </Link>
         </li>
+        <li>
+          <Link href="/dashboard" id="wd-kambaz-dashboard-link">
+            Kambaz Dashboard
+          </Link>
+        </li>
       </ul>
       <a href="https://github.com/dikshafaujdar003/webdev-client" id="wd-github">
         GitHub Repository

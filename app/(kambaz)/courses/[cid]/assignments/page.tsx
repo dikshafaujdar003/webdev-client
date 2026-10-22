@@ -1,6 +1,7 @@
 import "@/app/labs/lab2/tailwind/utilities.css";
 import { FaPlus, FaSearch } from "react-icons/fa";
 import AssignmentItem from "./AssignmentItem";
+import { assignments } from "../../../database";
 
 export default async function Assignments({
   params,
@@ -8,6 +9,9 @@ export default async function Assignments({
   params: Promise<{ cid: string }>;
 }) {
   const { cid } = await params;
+  const courseAssignments = assignments.filter(
+    (assignment) => assignment.course === cid
+  );
   return (
     <div id="wd-assignments">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
@@ -46,37 +50,15 @@ export default async function Assignments({
         </button>
       </h3>
       <ul id="wd-assignment-list" className="m-0 list-none p-0">
-        <AssignmentItem
-          cid={cid}
-          aid="A1"
-          title="A1 - ENV + HTML"
-          details="Multiple Modules | Due on 27 Sept at 11:59 pm | 100 pts"
-        />
-        <AssignmentItem
-          cid={cid}
-          aid="A2"
-          title="A2 - CSS + Tailwnd"
-          details="Multiple Modules | Due on Oct 11 sat at 11:59 pm | 100 pts"
-        />
-        <AssignmentItem
-          cid={cid}
-          aid="A3"
-          title="A3 - Javascript + React"
-          details="Multiple Modules | Due on Oct 25 sat at 11:59 pm | 100 pts"
-        />
-        {/* On my own */}
-        <AssignmentItem
-          cid={cid}
-          aid="my-a"
-          title="Quiz 1"
-          details="Multiple choice with some small coding parts | No available until Sept 20 at 12:00am | Due on Sept 27 at 11:59 pm | 100 pts"
-        />
-        <AssignmentItem
-          cid={cid}
-          aid="ai-a"
-          title="A9 - Sample assignment"
-          details="Multiple Modules | Not available until May 27 at 12:00am | Due Jun 3 at 11:59pm | 100 pts"
-        />
+        {courseAssignments.map((assignment) => (
+          <AssignmentItem
+            key={assignment._id}
+            cid={cid}
+            aid={assignment._id}
+            title={assignment.title}
+            details={`Multiple Modules | Not available until ${assignment.availableDate} | Due ${assignment.dueDate} | ${assignment.points} pts`}
+          />
+        ))}
       </ul>
     </div>
   );

@@ -1,0 +1,12 @@
+[
+  { "_id": "A1", "title": "A1 - ENV + HTML", "course": "CS5610", "description": "Submit a link to the landing page of your Web application running on Vercel.", "points": 100, "availableDate": "2026-09-13", "dueDate": "2026-09-27", "untilDate": "2026-09-27" },
+  { "_id": "A2", "title": "A2 - CSS + Tailwind", "course": "CS5610", "description": "Style Labs and Kambaz with CSS and Tailwind.", "points": 100, "availableDate": "2026-09-27", "dueDate": "2026-10-11", "untilDate": "2026-10-11" },
+  { "_id": "A3", "title": "A3 - JavaScript + React", "course": "CS5610", "description": "Drive Kambaz from JSON data.", "points": 100, "availableDate": "2026-10-11", "dueDate": "2026-10-25", "untilDate": "2026-10-25" },
+  { "_id": "Q1", "title": "Quiz 1", "course": "CS5610", "description": "Multiple choice with some small coding parts.", "points": 100, "availableDate": "2026-09-20", "dueDate": "2026-09-27", "untilDate": "2026-09-27" },
+  { "_id": "A9", "title": "A9 - Sample assignment", "course": "CS5610", "description": "Assistant-generated sample assignment.", "points": 100, "availableDate": "2026-05-27", "dueDate": "2026-06-03", "untilDate": "2026-06-03" },
+  { "_id": "N1", "title": "HW1 - Regular Expressions", "course": "CS6120", "description": "Write regular expressions to extract entities from text.", "points": 50, "availableDate": "2026-09-15", "dueDate": "2026-09-29", "untilDate": "2026-09-29" },
+  { "_id": "N2", "title": "HW2 - N-gram Models", "course": "CS6120", "description": "Build a bigram language model and report perplexity.", "points": 50, "availableDate": "2026-09-29", "dueDate": "2026-10-13", "untilDate": "2026-10-13" },
+  { "_id": "N3", "title": "HW3 - Embeddings", "course": "CS6120", "description": "Train and evaluate word embeddings.", "points": 50, "availableDate": "2026-10-13", "dueDate": "2026-10-27", "untilDate": "2026-10-27" },
+  { "_id": "G1", "title": "PS1 - Recurrences", "course": "CS5800", "description": "Solve recurrences with the master theorem.", "points": 100, "availableDate": "2026-09-15", "dueDate": "2026-09-25", "untilDate": "2026-09-25" },
+  { "_id": "G2", "title": "PS2 - Divide and Conquer", "course": "CS5800", "description": "Design divide and conquer algorithms.", "points": 100, "availableDate": "2026-09-25", "dueDate": "2026-10-09", "untilDate": "2026-10-09" }
+]

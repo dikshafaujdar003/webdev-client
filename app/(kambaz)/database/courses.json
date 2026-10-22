@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "CS5610",
+    "name": "CS5610 Web Development",
+    "number": "CS5610",
+    "startDate": "2026-09-08",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 4,
+    "image": "/images/cs5610.jpg",
+    "description": "Full stack development with React and Next.js"
+  },
+  {
+    "_id": "CS6120",
+    "name": "CS6120 Natural Language Processing",
+    "number": "CS6120",
+    "startDate": "2026-09-08",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 4,
+    "image": "/images/cs6120.jpg",
+    "description": "Language models and text processing"
+  },
+  {
+    "_id": "CS5800",
+    "name": "CS5800 Algorithms",
+    "number": "CS5800",
+    "startDate": "2026-09-08",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 4,
+    "image": "/images/cs5800.jpg",
+    "description": "Design and analysis of algorithms"
+  },
+  {
+    "_id": "CS4550",
+    "name": "CS4550 React Fundamentals",
+    "number": "CS4550",
+    "startDate": "2026-09-08",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 4,
+    "image": "/images/reactjs.jpg",
+    "description": "Components, props, and state with React"
+  },
+  {
+    "_id": "CS9999",
+    "name": "CS9999 Sample Course",
+    "number": "CS9999",
+    "startDate": "2026-09-08",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 3,
+    "image": "/images/teslabot.jpg",
+    "description": "Assistant-generated sample - not my course"
+  }
+]

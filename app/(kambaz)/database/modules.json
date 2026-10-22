@@ -1,0 +1,96 @@
+[
+  {
+    "_id": "M101",
+    "name": "Week 1, Lecture 1 - Course Introduction, Syllabus, Agenda",
+    "course": "CS5610",
+    "lessons": [
+      { "_id": "L101", "name": "LEARNING OBJECTIVES", "items": ["Introduction to the course", "Learn what is Web Development"] },
+      { "_id": "L102", "name": "READING", "items": ["Full Stack Developer - Chapter 1 - Introduction", "Full Stack Developer - Chapter 2 - Creating User Interfaces"] },
+      { "_id": "L103", "name": "SLIDES", "items": ["Introduction to Web Development", "Creating an HTTP server with Node.js", "Creating a React Application"] }
+    ]
+  },
+  {
+    "_id": "M102",
+    "name": "Week 2, Lecture 2 - HTML and the App Router",
+    "course": "CS5610",
+    "lessons": [
+      { "_id": "L201", "name": "LEARNING OBJECTIVES", "items": ["Learn how to create user interfaces with HTML"] }
+    ]
+  },
+  {
+    "_id": "M103",
+    "name": "Week 3, Lecture 3 - CSS and Tailwind",
+    "course": "CS5610",
+    "lessons": [
+      { "_id": "L301", "name": "LEARNING OBJECTIVES", "items": ["CSS Styling"] }
+    ]
+  },
+  {
+    "_id": "M104",
+    "name": "Week 4, Lecture 4 - JavaScript and ES6",
+    "course": "CS5610",
+    "lessons": [
+      { "_id": "L401", "name": "LEARNING OBJECTIVES", "items": ["Review core JavaScript syntax and ES6 language features", "Use ES6 variables, functions, arrays, strings, and destructuring", "Build Single Page Applications with React components"] },
+      { "_id": "L402", "name": "READING", "items": ["Developing Full Stack MERN Web Applications - Chapter 3 - Creating Single Page Applications with React"] },
+      { "_id": "L403", "name": "SLIDES", "items": ["Introduction to JavaScript", "ES6 Variables and Functions", "ES6 Arrays and Strings", "ES6 Object and Array Destructuring", "Dynamic Styling", "Parameterizing Components", "Data Driven Dashboard, Courses, Modules, and People Screens"] },
+      { "_id": "L404", "name": "DUE", "items": ["A3 - Chapter 3 (JS / React SPA), due Oct 25", "Q3 - JavaScript, due Nov 1"] }
+    ]
+  },
+  {
+    "_id": "M105",
+    "name": "Sample module (AI)",
+    "course": "CS5610",
+    "lessons": [
+      { "_id": "L501", "name": "Sample lesson (AI)", "items": ["Sample lesson content added by the assistant"] }
+    ]
+  },
+  {
+    "_id": "M201",
+    "name": "Week 1 - Text Processing Basics",
+    "course": "CS6120",
+    "lessons": [
+      { "_id": "L601", "name": "LEARNING OBJECTIVES", "items": ["Tokenization and normalization", "Regular expressions for text"] },
+      { "_id": "L602", "name": "READING", "items": ["Speech and Language Processing - Chapter 2"] }
+    ]
+  },
+  {
+    "_id": "M202",
+    "name": "Week 2 - N-gram Language Models",
+    "course": "CS6120",
+    "lessons": [
+      { "_id": "L701", "name": "LEARNING OBJECTIVES", "items": ["Estimate n-gram probabilities", "Smoothing and perplexity"] }
+    ]
+  },
+  {
+    "_id": "M203",
+    "name": "Week 3 - Word Embeddings",
+    "course": "CS6120",
+    "lessons": [
+      { "_id": "L801", "name": "SLIDES", "items": ["Word2Vec", "GloVe"] }
+    ]
+  },
+  {
+    "_id": "M301",
+    "name": "Week 1 - Asymptotic Analysis",
+    "course": "CS5800",
+    "lessons": [
+      { "_id": "L901", "name": "LEARNING OBJECTIVES", "items": ["Big-O, Omega, and Theta", "Solving recurrences"] }
+    ]
+  },
+  {
+    "_id": "M302",
+    "name": "Week 2 - Divide and Conquer",
+    "course": "CS5800",
+    "lessons": [
+      { "_id": "L1001", "name": "READING", "items": ["CLRS - Chapter 4"] }
+    ]
+  },
+  {
+    "_id": "M401",
+    "name": "Week 1 - Components and Props",
+    "course": "CS4550",
+    "lessons": [
+      { "_id": "L1101", "name": "LEARNING OBJECTIVES", "items": ["Write function components", "Pass data with props"] }
+    ]
+  }
+]

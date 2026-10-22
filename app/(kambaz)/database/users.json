@@ -1,0 +1,11 @@
+[
+  { "_id": "U1", "username": "iron_man", "firstName": "Tony", "lastName": "Stark", "email": "tony@stark.com", "loginId": "001234561S", "section": "S101", "role": "STUDENT", "lastActivity": "2020-10-01", "totalActivity": "10:21:32" },
+  { "_id": "U2", "username": "dark_knight", "firstName": "Bruce", "lastName": "Wayne", "email": "bruce@wayne.com", "loginId": "001234562S", "section": "S101", "role": "STUDENT", "lastActivity": "2020-11-02", "totalActivity": "15:32:43" },
+  { "_id": "U3", "username": "black_widow", "firstName": "Natasha", "lastName": "Romanoff", "email": "natasha@avengers.com", "loginId": "001234564S", "section": "S101", "role": "TA", "lastActivity": "2020-11-05", "totalActivity": "13:23:34" },
+  { "_id": "U4", "username": "thor", "firstName": "Thor", "lastName": "Odinson", "email": "thor@asgard.com", "loginId": "001234565S", "section": "S101", "role": "STUDENT", "lastActivity": "2020-12-01", "totalActivity": "11:22:33" },
+  { "_id": "U5", "username": "ada", "firstName": "Ada", "lastName": "Lovelace", "email": "ada@lovelace.com", "loginId": "001234566F", "section": "S101", "role": "FACULTY", "lastActivity": "2020-11-15", "totalActivity": "40:12:18" },
+  { "_id": "U6", "username": "cap", "firstName": "Steve", "lastName": "Rogers", "email": "steve@avengers.com", "loginId": "001234563S", "section": "S101", "role": "STUDENT", "lastActivity": "2020-10-02", "totalActivity": "23:32:43" },
+  { "_id": "U7", "username": "diksha", "firstName": "Diksha", "lastName": "Faujdar", "email": "faujdar.d@northeastern.edu", "loginId": "001234567S", "section": "S9", "role": "STUDENT", "lastActivity": "2026-09-27", "totalActivity": "05:12:00" },
+  { "_id": "U8", "username": "alan", "firstName": "Alan", "lastName": "Turing", "email": "alan@turing.com", "loginId": "001234568F", "section": "S201", "role": "FACULTY", "lastActivity": "2026-10-01", "totalActivity": "30:00:00" },
+  { "_id": "U9", "username": "grace", "firstName": "Grace", "lastName": "Hopper", "email": "grace@hopper.com", "loginId": "001234569S", "section": "S201", "role": "TA", "lastActivity": "2026-10-03", "totalActivity": "12:30:00" }
+]
