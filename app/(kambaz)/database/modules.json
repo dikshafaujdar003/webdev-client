@@ -1,96 +1,385 @@
 [
   {
     "_id": "M101",
-    "name": "Week 1, Lecture 1 - Course Introduction, Syllabus, Agenda",
-    "course": "CS5610",
+    "name": "Introduction to Rocket Propulsion",
+    "description": "Basic principles of rocket propulsion and rocket engines.",
+    "course": "RS101",
     "lessons": [
-      { "_id": "L101", "name": "LEARNING OBJECTIVES", "items": ["Introduction to the course", "Learn what is Web Development"] },
-      { "_id": "L102", "name": "READING", "items": ["Full Stack Developer - Chapter 1 - Introduction", "Full Stack Developer - Chapter 2 - Creating User Interfaces"] },
-      { "_id": "L103", "name": "SLIDES", "items": ["Introduction to Web Development", "Creating an HTTP server with Node.js", "Creating a React Application"] }
+      {
+        "_id": "L101",
+        "name": "History of Rocketry",
+        "description": "A brief history of rocketry and space exploration.",
+        "module": "M101"
+      },
+      {
+        "_id": "L102",
+        "name": "Rocket Propulsion Fundamentals",
+        "description": "Basic principles of rocket propulsion.",
+        "module": "M101"
+      },
+      {
+        "_id": "L103",
+        "name": "Rocket Engine Types",
+        "description": "Overview of different types of rocket engines.",
+        "module": "M101"
+      },
+      {
+        "_id": "L104",
+        "name": "Rockets I Want to Build",
+        "description": "My own lesson: sketching a two-stage model rocket.",
+        "module": "M101"
+      }
     ]
   },
   {
     "_id": "M102",
-    "name": "Week 2, Lecture 2 - HTML and the App Router",
-    "course": "CS5610",
+    "name": "Fuel and Combustion",
+    "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+    "course": "RS101",
     "lessons": [
-      { "_id": "L201", "name": "LEARNING OBJECTIVES", "items": ["Learn how to create user interfaces with HTML"] }
+      {
+        "_id": "L201",
+        "name": "Rocket Fuel",
+        "description": "Overview of different types of rocket fuels.",
+        "module": "M102"
+      },
+      {
+        "_id": "L202",
+        "name": "Combustion Processes",
+        "description": "Understanding combustion processes and efficiency.",
+        "module": "M102"
+      },
+      {
+        "_id": "L203",
+        "name": "Combustion Instability",
+        "description": "Understanding combustion instability and mitigation.",
+        "module": "M102"
+      },
+      {
+        "_id": "L204",
+        "name": "Nozzle Design",
+        "description": "How nozzle shape affects thrust.",
+        "module": "M102"
+      }
     ]
   },
   {
     "_id": "M103",
-    "name": "Week 3, Lecture 3 - CSS and Tailwind",
-    "course": "CS5610",
+    "name": "Nozzle Design",
+    "description": "Principles of rocket nozzle design and performance optimization.",
+    "course": "RS101",
     "lessons": [
-      { "_id": "L301", "name": "LEARNING OBJECTIVES", "items": ["CSS Styling"] }
-    ]
-  },
-  {
-    "_id": "M104",
-    "name": "Week 4, Lecture 4 - JavaScript and ES6",
-    "course": "CS5610",
-    "lessons": [
-      { "_id": "L401", "name": "LEARNING OBJECTIVES", "items": ["Review core JavaScript syntax and ES6 language features", "Use ES6 variables, functions, arrays, strings, and destructuring", "Build Single Page Applications with React components"] },
-      { "_id": "L402", "name": "READING", "items": ["Developing Full Stack MERN Web Applications - Chapter 3 - Creating Single Page Applications with React"] },
-      { "_id": "L403", "name": "SLIDES", "items": ["Introduction to JavaScript", "ES6 Variables and Functions", "ES6 Arrays and Strings", "ES6 Object and Array Destructuring", "Dynamic Styling", "Parameterizing Components", "Data Driven Dashboard, Courses, Modules, and People Screens"] },
-      { "_id": "L404", "name": "DUE", "items": ["A3 - Chapter 3 (JS / React SPA), due Oct 25", "Q3 - JavaScript, due Nov 1"] }
-    ]
-  },
-  {
-    "_id": "M105",
-    "name": "Sample module (AI)",
-    "course": "CS5610",
-    "lessons": [
-      { "_id": "L501", "name": "Sample lesson (AI)", "items": ["Sample lesson content added by the assistant"] }
+      {
+        "_id": "L301",
+        "name": "Nozzle Types",
+        "description": "Overview of different types of rocket nozzles.",
+        "module": "M103"
+      },
+      {
+        "_id": "L302",
+        "name": "Nozzle Performance",
+        "description": "Understanding nozzle performance and efficiency.",
+        "module": "M103"
+      },
+      {
+        "_id": "L303",
+        "name": "Nozzle Optimization",
+        "description": "Optimizing nozzle design for specific applications.",
+        "module": "M103"
+      }
     ]
   },
   {
     "_id": "M201",
-    "name": "Week 1 - Text Processing Basics",
-    "course": "CS6120",
+    "name": "Fundamentals of Aerodynamics",
+    "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+    "course": "RS102",
     "lessons": [
-      { "_id": "L601", "name": "LEARNING OBJECTIVES", "items": ["Tokenization and normalization", "Regular expressions for text"] },
-      { "_id": "L602", "name": "READING", "items": ["Speech and Language Processing - Chapter 2"] }
+      {
+        "_id": "L401",
+        "name": "Introduction to Fluid Dynamics",
+        "description": "Fundamentals of fluid mechanics and flow principles.",
+        "module": "M201"
+      },
+      {
+        "_id": "L402",
+        "name": "Airfoil Theory",
+        "description": "Understanding airfoil design and lift generation.",
+        "module": "M201"
+      },
+      {
+        "_id": "L403",
+        "name": "Drag and Lift Forces",
+        "description": "Analysis of aerodynamic forces on aircraft.",
+        "module": "M201"
+      }
     ]
   },
   {
     "_id": "M202",
-    "name": "Week 2 - N-gram Language Models",
-    "course": "CS6120",
+    "name": "Subsonic and Supersonic Flow",
+    "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+    "course": "RS102",
     "lessons": [
-      { "_id": "L701", "name": "LEARNING OBJECTIVES", "items": ["Estimate n-gram probabilities", "Smoothing and perplexity"] }
+      {
+        "_id": "L404",
+        "name": "Subsonic Flow Analysis",
+        "description": "Principles of subsonic aerodynamics.",
+        "module": "M202"
+      },
+      {
+        "_id": "L405",
+        "name": "Supersonic Flow Analysis",
+        "description": "Understanding shock waves and supersonic effects.",
+        "module": "M202"
+      },
+      {
+        "_id": "L406",
+        "name": "Transonic Flow",
+        "description": "Flow behavior at near-sonic speeds.",
+        "module": "M202"
+      }
     ]
   },
   {
     "_id": "M203",
-    "name": "Week 3 - Word Embeddings",
-    "course": "CS6120",
+    "name": "Aerodynamic Heating",
+    "description": "Study of aerodynamic heating and thermal protection systems.",
+    "course": "RS102",
     "lessons": [
-      { "_id": "L801", "name": "SLIDES", "items": ["Word2Vec", "GloVe"] }
+      {
+        "_id": "L407",
+        "name": "Heat Transfer in Flight",
+        "description": "Understanding aerodynamic heating mechanisms.",
+        "module": "M203"
+      },
+      {
+        "_id": "L408",
+        "name": "Thermal Protection Systems",
+        "description": "Design of heat shields and protection materials.",
+        "module": "M203"
+      }
     ]
   },
   {
     "_id": "M301",
-    "name": "Week 1 - Asymptotic Analysis",
-    "course": "CS5800",
+    "name": "Spacecraft Structural Design",
+    "description": "Fundamentals of designing spacecraft structures and materials selection.",
+    "course": "RS103",
     "lessons": [
-      { "_id": "L901", "name": "LEARNING OBJECTIVES", "items": ["Big-O, Omega, and Theta", "Solving recurrences"] }
+      {
+        "_id": "L501",
+        "name": "Structural Materials",
+        "description": "Selection and properties of spacecraft materials.",
+        "module": "M301"
+      },
+      {
+        "_id": "L502",
+        "name": "Load Analysis",
+        "description": "Understanding forces and stresses on spacecraft.",
+        "module": "M301"
+      },
+      {
+        "_id": "L503",
+        "name": "Structural Testing",
+        "description": "Testing and validation of spacecraft structures.",
+        "module": "M301"
+      }
     ]
   },
   {
     "_id": "M302",
-    "name": "Week 2 - Divide and Conquer",
-    "course": "CS5800",
+    "name": "Orbital Mechanics",
+    "description": "Understanding orbital dynamics and mission planning.",
+    "course": "RS103",
     "lessons": [
-      { "_id": "L1001", "name": "READING", "items": ["CLRS - Chapter 4"] }
+      {
+        "_id": "L504",
+        "name": "Kepler's Laws",
+        "description": "Understanding orbital motion principles.",
+        "module": "M302"
+      },
+      {
+        "_id": "L505",
+        "name": "Orbital Transfers",
+        "description": "Hohmann transfers and trajectory planning.",
+        "module": "M302"
+      },
+      {
+        "_id": "L506",
+        "name": "Mission Planning",
+        "description": "Designing spacecraft missions and orbits.",
+        "module": "M302"
+      }
     ]
   },
   {
-    "_id": "M401",
-    "name": "Week 1 - Components and Props",
-    "course": "CS4550",
+    "_id": "M303",
+    "name": "Spacecraft Systems Engineering",
+    "description": "Overview of spacecraft systems and subsystems engineering.",
+    "course": "RS103",
     "lessons": [
-      { "_id": "L1101", "name": "LEARNING OBJECTIVES", "items": ["Write function components", "Pass data with props"] }
+      {
+        "_id": "L507",
+        "name": "Power Systems",
+        "description": "Solar panels and power management for spacecraft.",
+        "module": "M303"
+      },
+      {
+        "_id": "L508",
+        "name": "Communication Systems",
+        "description": "Spacecraft communication and telemetry.",
+        "module": "M303"
+      },
+      {
+        "_id": "L509",
+        "name": "Thermal Management",
+        "description": "Temperature control in the space environment.",
+        "module": "M303"
+      }
+    ]
+  },
+  {
+    "_id": "CM101",
+    "name": "Week 1, Lecture 1 - Course Introduction, Syllabus, Agenda",
+    "description": "Week 1, Lecture 1 - Course Introduction, Syllabus, Agenda",
+    "course": "CS5610",
+    "lessons": [
+      {
+        "_id": "CL101",
+        "name": "LEARNING OBJECTIVES",
+        "description": "Introduction to the course; Learn what is Web Development",
+        "module": "CM101",
+        "items": [
+          "Introduction to the course",
+          "Learn what is Web Development"
+        ]
+      },
+      {
+        "_id": "CL102",
+        "name": "READING",
+        "description": "Full Stack Developer - Chapter 1 - Introduction; Full Stack Developer - Chapter 2 - Creating User Interfaces",
+        "module": "CM101",
+        "items": [
+          "Full Stack Developer - Chapter 1 - Introduction",
+          "Full Stack Developer - Chapter 2 - Creating User Interfaces"
+        ]
+      },
+      {
+        "_id": "CL103",
+        "name": "SLIDES",
+        "description": "Introduction to Web Development; Creating an HTTP server with Node.js; Creating a React Application",
+        "module": "CM101",
+        "items": [
+          "Introduction to Web Development",
+          "Creating an HTTP server with Node.js",
+          "Creating a React Application"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "CM102",
+    "name": "Week 2, Lecture 2 - HTML and the App Router",
+    "description": "Week 2, Lecture 2 - HTML and the App Router",
+    "course": "CS5610",
+    "lessons": [
+      {
+        "_id": "CL201",
+        "name": "LEARNING OBJECTIVES",
+        "description": "Learn how to create user interfaces with HTML",
+        "module": "CM102",
+        "items": [
+          "Learn how to create user interfaces with HTML"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "CM103",
+    "name": "Week 3, Lecture 3 - CSS and Tailwind",
+    "description": "Week 3, Lecture 3 - CSS and Tailwind",
+    "course": "CS5610",
+    "lessons": [
+      {
+        "_id": "CL301",
+        "name": "LEARNING OBJECTIVES",
+        "description": "CSS Styling",
+        "module": "CM103",
+        "items": [
+          "CSS Styling"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "CM104",
+    "name": "Week 4, Lecture 4 - JavaScript and ES6",
+    "description": "Week 4, Lecture 4 - JavaScript and ES6",
+    "course": "CS5610",
+    "lessons": [
+      {
+        "_id": "CL401",
+        "name": "LEARNING OBJECTIVES",
+        "description": "Review core JavaScript syntax and ES6 language features; Use ES6 variables, functions, arrays, strings, and destructuring; Build Single Page Applications with React components",
+        "module": "CM104",
+        "items": [
+          "Review core JavaScript syntax and ES6 language features",
+          "Use ES6 variables, functions, arrays, strings, and destructuring",
+          "Build Single Page Applications with React components"
+        ]
+      },
+      {
+        "_id": "CL402",
+        "name": "READING",
+        "description": "Developing Full Stack MERN Web Applications - Chapter 3 - Creating Single Page Applications with React",
+        "module": "CM104",
+        "items": [
+          "Developing Full Stack MERN Web Applications - Chapter 3 - Creating Single Page Applications with React"
+        ]
+      },
+      {
+        "_id": "CL403",
+        "name": "SLIDES",
+        "description": "Introduction to JavaScript; ES6 Variables and Functions; ES6 Arrays and Strings; ES6 Object and Array Destructuring; Dynamic Styling; Parameterizing Components; Data Driven Dashboard, Courses, Modules, and People Screens",
+        "module": "CM104",
+        "items": [
+          "Introduction to JavaScript",
+          "ES6 Variables and Functions",
+          "ES6 Arrays and Strings",
+          "ES6 Object and Array Destructuring",
+          "Dynamic Styling",
+          "Parameterizing Components",
+          "Data Driven Dashboard, Courses, Modules, and People Screens"
+        ]
+      },
+      {
+        "_id": "CL404",
+        "name": "DUE",
+        "description": "A3 - Chapter 3 (JS / React SPA), due Oct 25; Q3 - JavaScript, due Nov 1",
+        "module": "CM104",
+        "items": [
+          "A3 - Chapter 3 (JS / React SPA), due Oct 25",
+          "Q3 - JavaScript, due Nov 1"
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "CM105",
+    "name": "Sample module (AI)",
+    "description": "Sample module (AI)",
+    "course": "CS5610",
+    "lessons": [
+      {
+        "_id": "CL501",
+        "name": "Sample lesson (AI)",
+        "description": "Sample lesson content added by the assistant",
+        "module": "CM105",
+        "items": [
+          "Sample lesson content added by the assistant"
+        ]
+      }
     ]
   }
 ]

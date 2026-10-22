@@ -1,7 +1,7 @@
 import "@/app/labs/lab2/tailwind/utilities.css";
 import { FaPlus, FaSearch } from "react-icons/fa";
 import AssignmentItem from "./AssignmentItem";
-import { assignments } from "../../../database";
+import * as db from "../../../database";
 
 export default async function Assignments({
   params,
@@ -9,8 +9,8 @@ export default async function Assignments({
   params: Promise<{ cid: string }>;
 }) {
   const { cid } = await params;
-  const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === cid
+  const assignments = db.assignments.filter(
+    (assignment) => assignment.course === cid,
   );
   return (
     <div id="wd-assignments">
@@ -50,13 +50,13 @@ export default async function Assignments({
         </button>
       </h3>
       <ul id="wd-assignment-list" className="m-0 list-none p-0">
-        {courseAssignments.map((assignment) => (
+        {assignments.map((assignment) => (
           <AssignmentItem
             key={assignment._id}
             cid={cid}
             aid={assignment._id}
             title={assignment.title}
-            details={`Multiple Modules | Not available until ${assignment.availableDate} | Due ${assignment.dueDate} | ${assignment.points} pts`}
+            details={`Multiple Modules | Not available until ${assignment.available} | Due ${assignment.due} | ${assignment.points} pts`}
           />
         ))}
       </ul>

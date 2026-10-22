@@ -1,13 +1,21 @@
 export default function FindFunction() {
-  const numberArray1 = [1, 2, 4, 5, 6];
-  const stringArray1 = ["string1", "string2", "string3"];
+  let numberArray1 = [1, 2, 3, 4, 5];
+  let stringArray1 = ["string1", "string2", "string3"];
   const four = numberArray1.find((a) => a === 4);
   const string3 = stringArray1.find((a) => a === "string3");
+  // On my own
+  const ten = numberArray1.find((a) => a === 10);
+  // With AI
+  const two = numberArray1.find((a) => a === 2);
   return (
     <div id="wd-find-function">
-      <h4>Find function</h4>
+      <h4>Find Function</h4>
       four = {four} <br />
-      string3 = {string3}
+      string3 = {string3} <br />
+      {/* On my own */}
+      ten = {String(ten)} <br />
+      {/* With AI */}
+      two = {two}
       <hr />
     </div>
   );

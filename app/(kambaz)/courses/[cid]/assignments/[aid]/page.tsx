@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { assignments } from "../../../../database";
+import * as db from "../../../../database";
 
 export default async function AssignmentEditor({
   params,
@@ -7,9 +7,7 @@ export default async function AssignmentEditor({
   params: Promise<{ cid: string; aid: string }>;
 }) {
   const { cid, aid } = await params;
-  const assignment = assignments.find(
-    (assignment) => assignment.course === cid && assignment._id === aid
-  );
+  const assignment = db.assignments.find((a) => a._id === aid);
   const input = "w-full rounded border border-neutral-300 px-3 py-2";
   const label = "block mb-1 font-medium";
   return (
@@ -24,6 +22,10 @@ export default async function AssignmentEditor({
           defaultValue={assignment?.title ?? ""}
           className={input}
         />
+        {/* With AI */}
+        <p id="wd-assignment-id" className="mt-1 text-sm text-neutral-600">
+          Assignment id: {aid}
+        </p>
       </div>
 
       <div className="mb-3">
@@ -121,7 +123,7 @@ export default async function AssignmentEditor({
         <input
           type="date"
           id="wd-due-date"
-          defaultValue={assignment?.dueDate}
+          defaultValue={assignment?.due}
           className={input}
         />
       </div>
@@ -133,7 +135,7 @@ export default async function AssignmentEditor({
         <input
           type="date"
           id="wd-available-from"
-          defaultValue={assignment?.availableDate}
+          defaultValue={assignment?.available}
           className={input}
         />
       </div>
@@ -145,7 +147,7 @@ export default async function AssignmentEditor({
         <input
           type="date"
           id="wd-available-until"
-          defaultValue={assignment?.untilDate}
+          defaultValue={assignment?.due}
           className={input}
         />
       </div>

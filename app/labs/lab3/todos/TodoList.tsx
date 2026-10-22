@@ -1,16 +1,18 @@
-import todos from "./todos.json";
 import TodoItem from "./TodoItem";
-
+// todos.json: "Finish A3" is my own fourth todo; "Email the TA" was added with AI
+import todos from "./todos.json";
 export default function TodoList() {
+  // On my own
+  console.log(todos);
   return (
-    <div id="wd-todo-list">
+    <>
       <h3>Todo List</h3>
-      <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+      <ul className="list-none p-0">
         {todos.map((todo) => (
-          <TodoItem key={todo.id} todo={todo} />
+          <TodoItem key={todo.title} todo={todo} />
         ))}
       </ul>
       <hr />
-    </div>
+    </>
   );
 }

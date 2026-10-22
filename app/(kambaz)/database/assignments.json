@@ -1,12 +1,137 @@
 [
-  { "_id": "A1", "title": "A1 - ENV + HTML", "course": "CS5610", "description": "Submit a link to the landing page of your Web application running on Vercel.", "points": 100, "availableDate": "2026-09-13", "dueDate": "2026-09-27", "untilDate": "2026-09-27" },
-  { "_id": "A2", "title": "A2 - CSS + Tailwind", "course": "CS5610", "description": "Style Labs and Kambaz with CSS and Tailwind.", "points": 100, "availableDate": "2026-09-27", "dueDate": "2026-10-11", "untilDate": "2026-10-11" },
-  { "_id": "A3", "title": "A3 - JavaScript + React", "course": "CS5610", "description": "Drive Kambaz from JSON data.", "points": 100, "availableDate": "2026-10-11", "dueDate": "2026-10-25", "untilDate": "2026-10-25" },
-  { "_id": "Q1", "title": "Quiz 1", "course": "CS5610", "description": "Multiple choice with some small coding parts.", "points": 100, "availableDate": "2026-09-20", "dueDate": "2026-09-27", "untilDate": "2026-09-27" },
-  { "_id": "A9", "title": "A9 - Sample assignment", "course": "CS5610", "description": "Assistant-generated sample assignment.", "points": 100, "availableDate": "2026-05-27", "dueDate": "2026-06-03", "untilDate": "2026-06-03" },
-  { "_id": "N1", "title": "HW1 - Regular Expressions", "course": "CS6120", "description": "Write regular expressions to extract entities from text.", "points": 50, "availableDate": "2026-09-15", "dueDate": "2026-09-29", "untilDate": "2026-09-29" },
-  { "_id": "N2", "title": "HW2 - N-gram Models", "course": "CS6120", "description": "Build a bigram language model and report perplexity.", "points": 50, "availableDate": "2026-09-29", "dueDate": "2026-10-13", "untilDate": "2026-10-13" },
-  { "_id": "N3", "title": "HW3 - Embeddings", "course": "CS6120", "description": "Train and evaluate word embeddings.", "points": 50, "availableDate": "2026-10-13", "dueDate": "2026-10-27", "untilDate": "2026-10-27" },
-  { "_id": "G1", "title": "PS1 - Recurrences", "course": "CS5800", "description": "Solve recurrences with the master theorem.", "points": 100, "availableDate": "2026-09-15", "dueDate": "2026-09-25", "untilDate": "2026-09-25" },
-  { "_id": "G2", "title": "PS2 - Divide and Conquer", "course": "CS5800", "description": "Design divide and conquer algorithms.", "points": 100, "availableDate": "2026-09-25", "dueDate": "2026-10-09", "untilDate": "2026-10-09" }
+  {
+    "_id": "A101",
+    "title": "A1",
+    "course": "RS101",
+    "description": "Analyze the thermodynamics of a rocket combustion chamber and nozzle. Submit a short report covering chamber pressure, expansion ratio, and predicted specific impulse.",
+    "points": 100,
+    "due": "2024-05-13",
+    "available": "2024-05-06"
+  },
+  {
+    "_id": "A102",
+    "title": "A2",
+    "course": "RS101",
+    "description": "Compare solid, liquid, and hybrid rocket engine types. Discuss propellant choices, throttling, and typical mission applications.",
+    "points": 100,
+    "due": "2024-05-20",
+    "available": "2024-05-13"
+  },
+  {
+    "_id": "A103",
+    "title": "A3",
+    "course": "RS101",
+    "description": "Design a converging-diverging nozzle for a given chamber pressure and altitude. Include sketches, performance calculations, and a discussion of losses.",
+    "points": 100,
+    "due": "2024-05-27",
+    "available": "2024-05-20"
+  },
+  {
+    "_id": "A201",
+    "title": "A1",
+    "course": "RS102",
+    "description": "Calculate lift and drag for a given airfoil at several angles of attack. Plot the results and explain stall behavior.",
+    "points": 100,
+    "due": "2024-05-13",
+    "available": "2024-05-06"
+  },
+  {
+    "_id": "A202",
+    "title": "A2",
+    "course": "RS102",
+    "description": "Compare subsonic and supersonic flow over a wing. Identify shock waves, wave drag, and design implications.",
+    "points": 100,
+    "due": "2024-05-20",
+    "available": "2024-05-13"
+  },
+  {
+    "_id": "A203",
+    "title": "A3",
+    "course": "RS102",
+    "description": "Propose a thermal protection approach for a vehicle experiencing aerodynamic heating during re-entry. Justify material and geometry choices.",
+    "points": 100,
+    "due": "2024-05-27",
+    "available": "2024-05-20"
+  },
+  {
+    "_id": "A301",
+    "title": "A1",
+    "course": "RS103",
+    "description": "Select structural materials for a small spacecraft bus. Discuss mass, stiffness, thermal expansion, and radiation effects.",
+    "points": 100,
+    "due": "2024-05-13",
+    "available": "2024-05-06"
+  },
+  {
+    "_id": "A302",
+    "title": "A2",
+    "course": "RS103",
+    "description": "Plan a Hohmann transfer between two circular orbits. Compute delta-v, transfer time, and a simple mission timeline.",
+    "points": 100,
+    "due": "2024-05-20",
+    "available": "2024-05-13"
+  },
+  {
+    "_id": "A303",
+    "title": "A3",
+    "course": "RS103",
+    "description": "Integrate power, communication, and thermal subsystems for a CubeSat. Identify interfaces, constraints, and a basic mass/power budget.",
+    "points": 100,
+    "due": "2024-05-27",
+    "available": "2024-05-20"
+  },
+  {
+    "_id": "A204",
+    "title": "A4",
+    "course": "RS102",
+    "description": "Estimate lift and drag on a NACA 2412 airfoil at three angles of attack.",
+    "points": 100,
+    "due": "2024-06-03",
+    "available": "2024-05-27"
+  },
+  {
+    "_id": "CSA1",
+    "title": "A1 - ENV + HTML",
+    "course": "CS5610",
+    "description": "Submit a link to the landing page of your Web application running on Vercel.",
+    "points": 100,
+    "due": "2026-09-27",
+    "available": "2026-09-13"
+  },
+  {
+    "_id": "CSA2",
+    "title": "A2 - CSS + Tailwind",
+    "course": "CS5610",
+    "description": "Style Labs and Kambaz with CSS and Tailwind.",
+    "points": 100,
+    "due": "2026-10-11",
+    "available": "2026-09-27"
+  },
+  {
+    "_id": "CSA3",
+    "title": "A3 - JavaScript + React",
+    "course": "CS5610",
+    "description": "Drive Kambaz from JSON data.",
+    "points": 100,
+    "due": "2026-10-25",
+    "available": "2026-10-11"
+  },
+  {
+    "_id": "CSQ1",
+    "title": "Quiz 1",
+    "course": "CS5610",
+    "description": "Multiple choice with some small coding parts.",
+    "points": 100,
+    "due": "2026-09-27",
+    "available": "2026-09-20"
+  },
+  {
+    "_id": "CSA9",
+    "title": "A9 - Sample assignment",
+    "course": "CS5610",
+    "description": "Assistant-generated sample assignment.",
+    "points": 100,
+    "due": "2026-06-03",
+    "available": "2026-05-27"
+  }
 ]

@@ -11,6 +11,7 @@ import ArrowFunctions from "./ArrowFunctions";
 import ImpliedReturn from "./ImpliedReturn";
 import TemplateLiterals from "./TemplateLiterals";
 import SimpleArrays from "./SimpleArrays";
+import ArrayIndexAndLength from "./ArrayIndexAndLength";
 import AddingAndRemovingToFromArrays from "./AddingAndRemovingToFromArrays";
 import ForLoops from "./ForLoops";
 import MapFunction from "./MapFunction";
@@ -21,27 +22,22 @@ import IncludesSomeEvery from "./IncludesSomeEvery";
 import ReduceFunction from "./ReduceFunction";
 import JsonStringify from "./JsonStringify";
 import House from "./House";
-import WorkingWithConsole from "./WorkingWithConsole";
-import Spreading from "./Spreading";
+import Spreader from "./Spreader";
 import Destructing from "./Destructing";
 import FunctionDestructing from "./FunctionDestructing";
 import DestructingImports from "./DestructingImports";
 import OptionalChaining from "./OptionalChaining";
-import TypeScriptTypes from "./TypeScriptTypes";
 import Classes from "./Classes";
 import Styles from "./Styles";
 import ClientComponentDemo from "./ClientComponentDemo";
 import ServerComponentDemo from "./ServerComponentDemo";
-import SuspenseDemo from "./SuspenseDemo";
-import ClientOnlyApis from "./ClientOnlyApis";
-import ServerOnlyApis from "./ServerOnlyApis";
 import Add from "./Add";
 import Square from "./Square";
 import Highlight from "./Highlight";
 import PathParameters from "./PathParameters";
 import TodoList from "./todos/TodoList";
-
 export default function Lab3() {
+  console.log("Hello World!");
   return (
     <div id="wd-lab3">
       <h2>Lab 3</h2>
@@ -58,6 +54,7 @@ export default function Lab3() {
       <ImpliedReturn />
       <TemplateLiterals />
       <SimpleArrays />
+      <ArrayIndexAndLength />
       <AddingAndRemovingToFromArrays />
       <ForLoops />
       <MapFunction />
@@ -68,30 +65,40 @@ export default function Lab3() {
       <ReduceFunction />
       <JsonStringify />
       <House />
-      <WorkingWithConsole />
-      <Spreading />
+      <Spreader />
       <Destructing />
       <FunctionDestructing />
       <DestructingImports />
       <OptionalChaining />
-      <TypeScriptTypes />
       <Classes />
       <Styles />
       <ClientComponentDemo />
       <ServerComponentDemo />
-      <SuspenseDemo />
-      <ClientOnlyApis />
-      <ServerOnlyApis />
       <Add a={3} b={4} />
+      {/* On my own */}
       <Add a={10} b={20} />
+      {/* With AI */}
+      <Add a={7} b={8} />
       <h4>Square of 4</h4>
       <Square>4</Square>
+      {/* On my own */}
+      <p>
+        Square of 9 = <Square>9</Square>
+      </p>
+      {/* With AI */}
+      <p>
+        Square of 5 = <Square>5</Square>
+      </p>
       <hr />
-      <h4>Highlight</h4>
       <Highlight>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       </Highlight>
-      <hr />
+      <br />
+      {/* On my own */}
+      <Highlight>JavaScript turns static pages into data-driven screens.</Highlight>
+      <br />
+      {/* With AI */}
+      <Highlight>Children can be any JSX</Highlight>
       <PathParameters />
       <TodoList />
     </div>

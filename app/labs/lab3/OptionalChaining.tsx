@@ -1,16 +1,26 @@
 type House = {
-  address?: { city?: string; zip?: string };
+  bedrooms: number;
+  address?: { street: string; city: string; zip?: string };
   garage?: { cars: number };
 };
-
 export default function OptionalChaining() {
-  const house: House = { address: { city: "Roma" } };
+  const house: House = {
+    bedrooms: 4,
+    address: {
+      street: "Via Roma",
+      city: "Roma",
+    },
+  };
+  const missing = undefined as { prop?: string } | undefined;
   return (
     <div id="wd-optional-chaining">
-      <h4>Optional chaining and nullish coalescing</h4>
+      <h4>Optional Chaining</h4>
       house.address?.city = {house.address?.city} <br />
-      house.address?.zip ?? &quot;none&quot; = {house.address?.zip ?? "none"} <br />
-      house.garage?.cars ?? 0 = {house.garage?.cars ?? 0}
+      missing?.prop ?? &quot;n/a&quot; = {missing?.prop ?? "n/a"} <br />
+      {/* On my own */}
+      house.garage?.cars ?? 0 = {house.garage?.cars ?? 0} <br />
+      {/* With AI */}
+      house.address?.zip ?? &quot;unknown&quot; = {house.address?.zip ?? "unknown"}
       <hr />
     </div>
   );

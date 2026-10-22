@@ -1,32 +1,32 @@
-import { readdirSync } from "fs";
-import { join } from "path";
-import os from "os";
-
+import fs from "node:fs";
+import path from "node:path";
 export default function ServerComponentDemo() {
-  const lab3Dir = join(process.cwd(), "app", "labs", "lab3");
-  let files: string[];
+  const platform = process.platform;
+  const nodeVersion = process.version;
+  const serverRenderTime = new Date().toLocaleTimeString();
+  // On my own
+  const arch = process.arch;
+  // With AI
+  const pid = process.pid;
+  const lab3Dir = path.join(process.cwd(), "app/labs/lab3");
+  let files: string[] = [];
   try {
-    files = readdirSync(lab3Dir).filter((f) => f.endsWith(".tsx")).slice(0, 8);
-  } catch {
-    files = readdirSync(process.cwd()).slice(0, 8);
+    files = fs.readdirSync(lab3Dir);
+  } catch (error) {
+    console.error("Error reading lab3 directory:", error);
+    files = [];
   }
-  const serverInfo = {
-    platform: os.platform(),
-    arch: os.arch(),
-    nodeVersion: process.version,
-    cpus: os.cpus().length,
-  };
   return (
-    <div id="wd-server-component">
-      <h4>Server Component</h4>
-      <h5>Files read on the server</h5>
-      <ul>
-        {files.map((file) => (
-          <li key={file}>{file}</li>
-        ))}
-      </ul>
-      <h5>Server Information</h5>
-      <pre>{JSON.stringify(serverInfo, null, 2)}</pre>
+    <div id="wd-server-component-demo">
+      <h1>Server Component Demo</h1>
+      <h2>Server Render Time</h2>
+      <p>Rendered on server at: {serverRenderTime}</p>
+      <h2>Server Information</h2>
+      <pre>
+        {JSON.stringify({ platform, nodeVersion, serverRenderTime, arch, pid }, null, 2)}
+      </pre>
+      <h2>Filesystem Access Demo</h2>
+      <pre>{JSON.stringify(files, null, 2)}</pre>
     </div>
   );
 }

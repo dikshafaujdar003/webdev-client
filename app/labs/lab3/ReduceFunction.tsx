@@ -1,12 +1,18 @@
 export default function ReduceFunction() {
-  const numberArray1 = [1, 2, 4, 5, 6];
-  const sum = numberArray1.reduce((total, a) => total + a, 0);
-  const max = numberArray1.reduce((best, a) => (a > best ? a : best), numberArray1[0]);
+  const numbers = [1, 2, 3, 4, 5];
+  const sum = numbers.reduce((total, n) => total + n, 0);
+  // On my own
+  const product = numbers.reduce((total, n) => total * n, 1);
+  // With AI
+  const joined = numbers.reduce((text, n) => text + n, "");
   return (
     <div id="wd-reduce-function">
-      <h4>Reduce function</h4>
+      <h4>Reduce Function</h4>
       sum = {sum} <br />
-      max = {max}
+      {/* On my own */}
+      product = {product} <br />
+      {/* With AI */}
+      joined = {joined}
       <hr />
     </div>
   );

@@ -1,6 +1,7 @@
 [
-  { "id": 1, "title": "Buy milk", "done": true, "status": "COMPLETE" },
-  { "id": 2, "title": "Pickup the kids", "done": false, "status": "IN PROGRESS" },
-  { "id": 3, "title": "Walk the dog", "done": false, "status": "DEFERRED" },
-  { "id": 4, "title": "Finish A3", "done": false, "status": "IN PROGRESS" }
+  { "title": "Buy milk", "status": "CANCELED", "done": true },
+  { "title": "Pickup the kids", "status": "IN PROGRESS", "done": false },
+  { "title": "Walk the dog", "status": "DEFERRED", "done": false },
+  { "title": "Finish A3", "status": "IN PROGRESS", "done": false },
+  { "title": "Email the TA", "status": "COMPLETED", "done": true }
 ]

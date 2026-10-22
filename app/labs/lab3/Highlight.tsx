@@ -1,8 +1,10 @@
-import type { ReactNode } from "react";
-
+import { ReactNode } from "react";
 export default function Highlight({ children }: { children: ReactNode }) {
   return (
-    <span id="wd-highlight" style={{ backgroundColor: "yellow", color: "red" }}>
+    <span
+      id="wd-highlight"
+      style={{ backgroundColor: "yellow", color: "red" }}
+    >
       {children}
     </span>
   );

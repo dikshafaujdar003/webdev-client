@@ -1,16 +1,21 @@
 export default function IncludesSomeEvery() {
-  const numberArray1 = [1, 2, 4, 5, 6];
-  const hasFour = numberArray1.includes(4);
-  const someGreaterThan5 = numberArray1.some((a) => a > 5);
-  const allPositive = numberArray1.every((a) => a > 0);
-  const allEven = numberArray1.every((a) => a % 2 === 0);
+  const numbers = [1, 2, 3, 4, 5];
+  const includes3 = numbers.includes(3);
+  const includes8 = numbers.includes(8);
+  const someGreaterThan4 = numbers.some((n) => n > 4);
+  const everyGreaterThan0 = numbers.every((n) => n > 0);
   return (
     <div id="wd-includes-some-every">
-      <h4>Includes, some, and every</h4>
-      hasFour = {hasFour + ""} <br />
-      someGreaterThan5 = {someGreaterThan5 + ""} <br />
-      allPositive = {allPositive + ""} <br />
-      allEven = {allEven + ""}
+      <h4>Includes, Some, Every</h4>
+      includes(3) = {includes3 + ""}           <br />
+      includes(8) = {includes8 + ""}           <br />
+      some(n &gt; 4) = {someGreaterThan4 + ""} <br />
+      every(n &gt; 0) = {everyGreaterThan0 + ""} <br />
+      {/* On my own */}
+      every(n &gt; 4) = {numbers.every((n) => n > 4) + ""} <br />
+      some(n === 1) = {numbers.some((n) => n === 1) + ""} <br />
+      {/* With AI */}
+      includes(5) = {numbers.includes(5) + ""}
       <hr />
     </div>
   );

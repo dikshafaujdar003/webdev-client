@@ -1,19 +1,42 @@
-import "./index.css";
-
+import "./Classes.css";
 export default function Classes() {
   const color = "blue";
   const dangerous = true;
+  // On my own
+  const calm = true;
+  // With AI
+  const shade = "green";
   return (
     <div id="wd-classes">
       <h2>Classes</h2>
-      <div className="wd-box wd-bg-yellow wd-fg-black">Yellow background</div>
-      <div className="wd-box wd-bg-blue wd-fg-black">Blue background</div>
-      <div className="wd-box wd-bg-red wd-fg-black">Red background</div>
-      <div className={`wd-box wd-bg-${color} wd-fg-black`}>Dynamic blue background</div>
-      <div className={`wd-box ${dangerous ? "wd-bg-red" : "wd-bg-green"} wd-fg-black`}>
+      <div className="wd-bg-yellow wd-fg-black wd-padding-10px">
+        Yellow background
+      </div>
+      <div className="wd-bg-blue wd-fg-black wd-padding-10px">
+        Blue background
+      </div>
+      <div className="wd-bg-red wd-fg-black wd-padding-10px">
+        Red background
+      </div>
+      <div className={`wd-bg-${color} wd-fg-black wd-padding-10px`}>
+        Dynamic Blue background
+      </div>
+      <div
+        className={`${dangerous ? "wd-bg-red" : "wd-bg-green"} wd-fg-black wd-padding-10px`}
+      >
         Dangerous background
       </div>
-      <div className="wd-box wd-bg-purple wd-fg-black">My own purple background</div>
+      {/* On my own */}
+      <div
+        id="wd-my-class-box"
+        className={`${calm ? "wd-bg-green" : "wd-bg-yellow"} wd-fg-black wd-padding-10px`}
+      >
+        {calm ? "Calm green background" : "Calm yellow background"}
+      </div>
+      {/* With AI */}
+      <div className={`wd-bg-${shade} wd-fg-black wd-padding-10px`}>
+        Dynamic Green background
+      </div>
       <hr />
     </div>
   );

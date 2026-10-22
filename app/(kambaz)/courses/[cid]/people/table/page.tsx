@@ -1,5 +1,5 @@
 import { FaUserCircle } from "react-icons/fa";
-import { users, enrollments } from "../../../../database";
+import * as db from "../../../../database";
 
 export default async function PeopleTable({
   params,
@@ -7,10 +7,12 @@ export default async function PeopleTable({
   params: Promise<{ cid: string }>;
 }) {
   const { cid } = await params;
-  const enrolledUserIds = enrollments
-    .filter((enrollment) => enrollment.course === cid)
-    .map((enrollment) => enrollment.user);
-  const roster = users.filter((user) => enrolledUserIds.includes(user._id));
+  const { users, enrollments } = db;
+  const enrolled = users.filter((usr) =>
+    enrollments.some(
+      (enrollment) => enrollment.user === usr._id && enrollment.course === cid,
+    ),
+  );
   return (
     <div id="wd-people-table" className="overflow-x-auto">
       <table className="w-full border-collapse text-left text-sm">
@@ -25,7 +27,7 @@ export default async function PeopleTable({
           </tr>
         </thead>
         <tbody>
-          {roster.map((user) => (
+          {enrolled.map((user) => (
             <tr key={user._id} className="odd:bg-neutral-50">
               <td className="wd-full-name p-2 text-nowrap">
                 <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />

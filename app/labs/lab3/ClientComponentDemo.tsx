@@ -1,13 +1,15 @@
 "use client";
 import { usePathname } from "next/navigation";
-
 export default function ClientComponentDemo() {
-  const pathname = usePathname() ?? "";
+  const pathname = usePathname();
   return (
-    <div id="wd-client-component">
-      <h4>Client Component</h4>
+    <div id="wd-client-component-demo">
+      <h1>Client Component Demo</h1>
       <p>Current pathname: {pathname}</p>
+      {/* On my own */}
       <p>Pathname length: {pathname.length}</p>
+      {/* With AI */}
+      <p>Last segment: {pathname.split("/").pop()}</p>
     </div>
   );
 }

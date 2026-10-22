@@ -17,6 +17,12 @@ export default function Labs() {
         </li>
         <li>
           <Link href="/labs/lab3">Lab 3: JavaScript Fundamentals</Link>
+          {" "}(
+          <Link href="/labs/lab3/types">TypeScript Types</Link>,{" "}
+          <Link href="/labs/lab3/client-apis">Client-Only APIs</Link>,{" "}
+          <Link href="/labs/lab3/server-apis">Server-Only APIs</Link>,{" "}
+          <Link href="/labs/lab3/children">Composing Styles</Link>
+          )
         </li>
         <li>
           <Link href="/labs/lab4" id="wd-lab4-link">

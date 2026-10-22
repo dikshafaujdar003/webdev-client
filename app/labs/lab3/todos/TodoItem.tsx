@@ -1,17 +1,18 @@
-export type Todo = {
-  id: number;
-  title: string;
+type Todo = {
   done: boolean;
+  title: string;
   status: string;
 };
-
-export default function TodoItem({ todo }: { todo: Todo }) {
+const TodoItem = ({
+  todo = { done: true, title: "Buy milk", status: "COMPLETED" },
+}: {
+  todo?: Todo;
+}) => {
   return (
-    <li className="wd-todo-item">
-      <input type="checkbox" defaultChecked={todo.done} id={`wd-todo-${todo.id}`} />{" "}
-      <label htmlFor={`wd-todo-${todo.id}`}>
-        {todo.title} ({todo.status})
-      </label>
+    <li className="flex items-center gap-2 border-b py-1">
+      <input type="checkbox" className="me-2" defaultChecked={todo.done} />
+      {todo.title} ({todo.status})
     </li>
   );
-}
+};
+export default TodoItem;

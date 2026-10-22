@@ -11,16 +11,34 @@ export default function House() {
       country: "Italy",
     },
     owners: ["Alice", "Bob"],
+    // On my own
+    yearBuilt: 1998,
+    // With AI
+    garage: { cars: 2 },
   };
+  console.log(house);
+  // On my own
+  console.log(house.owners);
+  // With AI
+  console.log(house.address.city);
   return (
     <div id="wd-house">
-      <h4>JavaScript Object Notation (JSON)</h4>
+      <h4>House</h4>
       <h5>bedrooms</h5>
       {house.bedrooms}
       <h5>bathrooms</h5>
       {house.bathrooms}
+      {/* On my own */}
       <h5>owners</h5>
       {house.owners.join(", ")}
+      {/* On my own */}
+      <h5>yearBuilt</h5>
+      {house.yearBuilt}
+      {/* With AI */}
+      <h5>garage cars</h5>
+      {house.garage.cars}
+      <h5>Number of properties</h5>
+      {Object.keys(house).length}
       <h5>Data</h5>
       <pre>{JSON.stringify(house, null, 2)}</pre>
       <hr />

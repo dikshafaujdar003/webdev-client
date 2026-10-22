@@ -1,15 +1,15 @@
 export default function JsonStringify() {
-  const course = {
-    number: "CS5610",
-    name: "Web Development",
-    instructor: { first: "Jose", last: "Annunziato" },
-    topics: ["HTML", "CSS", "JavaScript"],
-  };
+  const squares = [1, 4, 16, 25, 36];
+  // On my own
+  const myCourse = { course: "CS5610", credits: 4 };
   return (
     <div id="wd-json-stringify">
-      <h4>JSON Stringify</h4>
-      squares = {JSON.stringify([1, 4, 16, 25, 36])} <br />
-      <pre>{JSON.stringify(course, null, 2)}</pre>
+      <h3>JSON Stringify</h3>
+      squares = {JSON.stringify(squares)} <br />
+      {/* With AI */}
+      sampleCourse = {JSON.stringify({ course: "RS102", modules: 3 })} <br />
+      {/* On my own */}
+      myCourse = {JSON.stringify(myCourse)}
       <hr />
     </div>
   );

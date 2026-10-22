@@ -1,20 +1,26 @@
 export default function Destructing() {
-  const person = { name: "John", age: 25 };
-  const { name, age } = person;
-  const numbers = ["one", "two", "three"];
-  const [first, second, third] = numbers;
+  // With AI: city
+  const person = { name: "John", age: 25, city: "Boston" };
+  const { name, age, city } = person;
+  // On my own: "four"
+  const numbers = ["one", "two", "three", "four"];
+  const [first, second, third, fourth] = numbers;
   return (
     <div id="wd-destructing">
-      <h4>Destructing</h4>
-      <h5>Object Destructing</h5>
-      const &#123; name, age &#125; = &#123; name: &quot;John&quot;, age: 25 &#125; <br />
-      name = {name} <br />
-      age = {age}
-      <h5>Array Destructing</h5>
-      const [first, second, third] = [&quot;one&quot;,&quot;two&quot;,&quot;three&quot;] <br />
-      first = {first} <br />
+      <h2>Destructing</h2>
+      <h3>Object Destructing</h3>
+      const &#123; name, age &#125; = &#123; name: &quot;John&quot;, age: 25 &#125; <br /> <br />
+      name = {name}     <br />
+      age = {age}       <br />
+      {/* With AI */}
+      city = {city}
+      <h3>Array Destructing</h3>
+      const [first, second, third] = [&quot;one&quot;,&quot;two&quot;,&quot;three&quot;] <br /> <br />
+      first = {first}   <br />
       second = {second} <br />
-      third = {third}
+      third = {third}   <br />
+      {/* On my own */}
+      fourth = {fourth}
       <hr />
     </div>
   );

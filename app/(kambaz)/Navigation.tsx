@@ -6,23 +6,26 @@ import {
   FaRegCalendar,
   FaInbox,
   FaFlask,
+  FaClockRotateLeft,
 } from "react-icons/fa6";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "@/app/labs/lab2/tailwind/utilities.css";
 
+// On my own: every sidebar item after Account comes from LINKS
+const LINKS = [
+  { label: "Dashboard", path: "/dashboard", icon: AiOutlineDashboard },
+  { label: "Courses", path: "/dashboard", icon: FaBookOpen },
+  { label: "Calendar", path: "/calendar", icon: FaRegCalendar },
+  { label: "Inbox", path: "/inbox", icon: FaInbox },
+  { label: "Labs", path: "/labs", icon: FaFlask },
+  // With AI
+  { label: "History", path: "/history", icon: FaClockRotateLeft },
+] as const;
+
 export default function KambazNavigation() {
   const pathname = usePathname() ?? "";
-  const links = [
-    { label: "Account", path: "/account", match: "/account", icon: FaRegCircleUser },
-    { label: "Dashboard", path: "/dashboard", match: "/dashboard", icon: AiOutlineDashboard },
-    { label: "Courses", path: "/dashboard", match: "/courses", icon: FaBookOpen },
-    { label: "Calendar", path: "/calendar", match: "/calendar", icon: FaRegCalendar },
-    { label: "Inbox", path: "/inbox", match: "/inbox", icon: FaInbox },
-    { label: "Labs", path: "/labs", match: "/labs", icon: FaFlask },
-  ];
-  const isActive = (match: string) =>
-    pathname === match || pathname.startsWith(match + "/");
+  const accountActive = pathname.includes("/account");
 
   return (
     <nav
@@ -38,25 +41,41 @@ export default function KambazNavigation() {
       >
         Northeastern
       </a>
-      {links.map(({ label, path, match, icon: Icon }) => {
-        const active = isActive(match);
+      <Link
+        href="/account"
+        id="wd-account-link"
+        aria-current={accountActive ? "page" : undefined}
+        className={`block py-3 text-center text-sm no-underline ${
+          accountActive ? "bg-white text-red-600" : "bg-black text-white"
+        }`}
+      >
+        <FaRegCircleUser
+          className={`inline-block text-3xl ${
+            accountActive ? "text-red-600" : "text-white"
+          }`}
+        />
+        <br />
+        Account
+      </Link>
+      {LINKS.map((link) => {
+        const active =
+          link.label === "Courses"
+            ? pathname.includes("/courses")
+            : pathname.includes(link.path);
+        const Icon = link.icon;
         return (
           <Link
-            key={label}
-            href={path}
-            id={`wd-${label.toLowerCase()}-link`}
+            key={link.label}
+            href={link.path}
+            id={`wd-${link.label.toLowerCase()}-link`}
             aria-current={active ? "page" : undefined}
             className={`block py-3 text-center text-sm no-underline ${
-              active ? "active bg-white text-red-600" : "bg-black text-white"
+              active ? "bg-white text-red-600" : "bg-black text-white"
             }`}
           >
-            <Icon
-              className={`inline-block text-3xl ${
-                label === "Account" ? (active ? "text-neutral-500" : "text-white") : "text-red-600"
-              }`}
-            />
+            <Icon className="inline-block text-3xl text-red-500" />
             <br />
-            {label}
+            {link.label}
           </Link>
         );
       })}

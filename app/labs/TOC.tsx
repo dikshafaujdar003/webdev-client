@@ -1,63 +1,45 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+const LINKS = [
+  { href: "/labs", id: "wd-home-link", label: "Home", match: (p: string) => p === "/labs" },
+  { href: "/labs/lab1", id: "wd-lab1-link", label: "Lab 1", match: (p: string) => p.endsWith("/lab1") || p.includes("/lab1/") },
+  { href: "/labs/lab2", id: "wd-lab2-link", label: "Lab 2", match: (p: string) => p.includes("/lab2") },
+  { href: "/labs/lab3", id: "wd-lab3-link", label: "Lab 3", match: (p: string) => p.includes("/lab3") },
+  { href: "/labs/lab4", id: "wd-toc-lab4-link", label: "Lab 4", match: (p: string) => p.includes("/lab4") },
+  { href: "/labs/lab5", id: "wd-toc-lab5-link", label: "Lab 5", match: (p: string) => p.includes("/lab5") },
+  { href: "/", id: "wd-kambaz-link", label: "Kambaz", match: () => false },
+  { href: "/dashboard", id: "wd-toc-dashboard-link", label: "Kambaz Dashboard", match: () => false },
+  { href: "https://github.com/dikshafaujdar003/webdev-client", id: "wd-toc-github", label: "GitHub Repository", match: () => false },
+  // With AI
+  { href: "https://kambaz.dev/book/ch3", id: "wd-book-ch3-link", label: "Book Ch3", match: () => false },
+] as const;
+const activeStyle = {
+  backgroundColor: "#2563eb",
+  color: "white",
+  borderRadius: "4px",
+  padding: "2px 8px",
+  textDecoration: "none",
+};
 export default function TOC() {
   const pathname = usePathname() ?? "";
-  const labs = [
-    { label: "Lab 1", path: "/labs/lab1" },
-    { label: "Lab 2", path: "/labs/lab2" },
-    { label: "Lab 3", path: "/labs/lab3" },
-    { label: "Lab 4", path: "/labs/lab4" },
-    { label: "Lab 5", path: "/labs/lab5" },
-  ];
-  const isActive = (path: string) =>
-    pathname === path || pathname.startsWith(path + "/");
   return (
     <ul>
-      <li>
-        <Link
-          href="/labs"
-          id="wd-home-link"
-          className={pathname === "/labs" ? "wd-active-link" : undefined}
-          aria-current={pathname === "/labs" ? "page" : undefined}
-        >
-          Home
-        </Link>
-      </li>
-      {labs.map((lab) => (
-        <li key={lab.path}>
-          <Link
-            href={lab.path}
-            id={`wd-${lab.path.split("/").pop()}-toc-link`}
-            className={isActive(lab.path) ? "wd-active-link" : undefined}
-            aria-current={isActive(lab.path) ? "page" : undefined}
-            style={isActive(lab.path) ? { fontWeight: "bold", color: "#dc2626" } : undefined}
-          >
-            {lab.label}
-          </Link>
-        </li>
-      ))}
-      <li>
-        <Link href="/" id="wd-kambaz-link">
-          Kambaz
-        </Link>
-      </li>
-      <li>
-        <Link href="/dashboard" id="wd-toc-dashboard-link">
-          Kambaz Dashboard
-        </Link>
-      </li>
-      <li>
-        <a href="https://kambaz.dev/book/ch3" id="wd-toc-book-link">
-          Chapter 3
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/dikshafaujdar003/webdev-client" id="wd-toc-github">
-          GitHub Repository
-        </a>
-      </li>
+      {LINKS.map((link) => {
+        const active = link.match(pathname);
+        return (
+          <li key={link.id}>
+            <Link
+              href={link.href}
+              id={link.id}
+              style={active ? activeStyle : undefined}
+              aria-current={active ? "page" : undefined}
+            >
+              {link.label}
+            </Link>
+          </li>
+        );
+      })}
       <li id="wd-toc-name">
         Diksha Faujdar
         <br />
