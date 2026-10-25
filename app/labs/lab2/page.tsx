@@ -34,8 +34,7 @@ export default function Lab2() {
       {/* On my own 2.1.1 */}
       <p style={{ backgroundColor: "green", color: "yellow" }}>
         This is my own paragraph using the style attribute directly, with a
-        green background and yellow text, just to show I can set it inline
-        even though it&apos;s not best practice.
+        green background and yellow text, just to show I can set it inline.
       </p>
 
       <div id="wd-css-id-selectors">
@@ -51,9 +50,7 @@ export default function Lab2() {
         </p>
         {/* On my own 2.1.3 */}
         <p id="wd-id-selector-3">
-          This is my own third paragraph. It has its own id, so it gets its
-          own look that is separate from the two id-styled examples above
-          it.
+          This is my own third paragraph.
         </p>
       </div>
 
@@ -120,9 +117,9 @@ export default function Lab2() {
       </p>
       {/* On my own 2.1.6 */}
       <p id="wd-your-cascade" className="wd-your-cascade">
-        I made my own version of this three-way conflict too, between a tag
+        I made my own version of this three way conflict too, between a tag
         rule, a class rule, and an id rule, and the id rule wins here as
-        well, just like it did in the example above.
+        well.
       </p>
 
       <ForegroundColors />

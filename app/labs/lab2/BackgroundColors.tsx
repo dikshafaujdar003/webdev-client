@@ -15,7 +15,7 @@ export default function BackgroundColors() {
       {/* On my own 2.1.8 */}
       <p id="wd-your-bg" className="wd-bg-color-yellow wd-fg-color-black">
         This is my own yellow-background paragraph. I kept the text dark
-        here too, for the same reason, so it&apos;s still easy to read.
+        here too, so it is easy to read.
       </p>
     </div>
   );

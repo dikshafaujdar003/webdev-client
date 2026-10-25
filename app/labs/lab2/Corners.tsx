@@ -25,8 +25,7 @@ export default function Corners() {
         id="wd-your-corners"
         className="wd-your-rounded wd-border-thin wd-border-blue wd-border-solid wd-padding-fat"
       >
-        This is my own box, with only the right corners rounded instead of
-        the left ones.
+        This is my own box, with only the right corners rounded instead of the left ones.
       </p>
     </div>
   );

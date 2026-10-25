@@ -76,21 +76,21 @@ p#wd-your-cascade {
   color: white;
 }
 
-/* ===== 2.1.7 Foreground colors ===== */
+/* 2.1.7 Foreground colors */
 .wd-fg-color-black { color: black; }
 .wd-fg-color-white { color: white; }
 .wd-fg-color-blue { color: #7070ff; }
 .wd-fg-color-red { color: #ff7070; }
 .wd-fg-color-green { color: green; }
 
-/* ===== 2.1.8 Background colors ===== */
+/* 2.1.8 Background colors*/
 .wd-bg-color-yellow { background-color: #ffff07; }
 .wd-bg-color-blue { background-color: #7070ff; }
 .wd-bg-color-red { background-color: #ff7070; }
 .wd-bg-color-green { background-color: green; }
 .wd-bg-color-gray { background-color: lightgray; }
 
-/* ===== 2.1.9 Borders ===== */
+/* 2.1.9 Borders*/
 .wd-border-fat { border-width: 20px 30px 20px 30px; }
 .wd-border-thin { border-width: 4px; }
 .wd-border-solid { border-style: solid; }
@@ -99,7 +99,7 @@ p#wd-your-cascade {
 .wd-border-red { border-color: #ff7070; }
 .wd-border-blue { border-color: #7070ff; }
 
-/* ===== 2.1.10 Padding, margins, box model ===== */
+/* 2.1.10 Padding, margins, box model*/
 .wd-padded-top-left {
   padding-top: 50px;
   padding-left: 50px;
@@ -184,7 +184,7 @@ p#wd-your-cascade {
   box-sizing: border-box;
 }
 
-/* ===== 2.1.11 Corners ===== */
+/* 2.1.11 Corners */
 .wd-rounded-corners-top {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -209,7 +209,7 @@ p#wd-your-cascade {
   border-bottom-right-radius: 40px;
 }
 
-/* ===== 2.1.12 Dimensions and display ===== */
+/* 2.1.12 Dimensions and display */
 .wd-dimension-portrait {
   width: 75px;
   height: 100px;
@@ -250,7 +250,7 @@ p#wd-your-cascade {
   padding: 5px;
 }
 
-/* ===== 2.1.13 Relative position ===== */
+/* 2.1.13 Relative position*/
 .wd-pos-relative-nudge-up-right {
   position: relative;
   bottom: 30px;
@@ -276,7 +276,7 @@ p#wd-your-cascade {
   right: 25px;
 }
 
-/* ===== 2.1.14 Absolute position ===== */
+/* 2.1.14 Absolute position*/
 .wd-pos-absolute-10-10 {
   position: absolute;
   top: 10px;
@@ -304,7 +304,7 @@ p#wd-your-cascade {
   bottom: 10px;
 }
 
-/* ===== 2.1.15 Fixed position ===== */
+/* 2.1.15 Fixed position */
 .wd-pos-fixed {
   position: fixed;
   right: 0px;
@@ -322,7 +322,7 @@ p#wd-your-cascade {
   right: 0;
 }
 
-/* ===== 2.1.16 Z-index ===== */
+/* 2.1.16 Z-index */
 .wd-zindex-bring-to-front {
   z-index: 10;
 }
@@ -340,7 +340,7 @@ p#wd-your-cascade {
   left: 60px;
 } 
 
-/* ===== 2.1.17 Float ===== */
+/* 2.1.17 Float */
 .wd-float-left {
   float: left;
   height: 100px;
@@ -364,7 +364,7 @@ img.wd-float-right {
   clear: both;
 }
 
-/* ===== 2.1.18 Grid layout with float ===== */
+/*2.1.18 Grid layout with float */
 .wd-grid-row {
   clear: both;
 }
@@ -375,7 +375,7 @@ img.wd-float-right {
 .wd-grid-col-main-content { width: 60%; float: left; }
 .wd-grid-col-right-sidebar { width: 20%; float: left; }
 
-/* ===== 2.1.19 Flex ===== */
+/* 2.1.19 Flex*/
 .wd-flex-row-container {
   display: flex;
   flex-direction: row;
