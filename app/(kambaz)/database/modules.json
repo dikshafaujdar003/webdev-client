@@ -381,5 +381,65 @@
         ]
       }
     ]
+  },
+  {
+    "_id": "NM1",
+    "name": "Text Processing and Language Models",
+    "description": "Tokenization and n-gram language models.",
+    "course": "CS6120",
+    "lessons": [
+      {
+        "_id": "NL101",
+        "name": "Tokenization and Normalization",
+        "description": "Turning raw text into tokens.",
+        "module": "NM1"
+      },
+      {
+        "_id": "NL102",
+        "name": "N-gram Language Models",
+        "description": "Smoothing and perplexity.",
+        "module": "NM1"
+      }
+    ]
+  },
+  {
+    "_id": "NM2",
+    "name": "Embeddings and Neural Models",
+    "description": "Vector semantics and sequence models.",
+    "course": "CS6120",
+    "lessons": [
+      {
+        "_id": "NL201",
+        "name": "Word Embeddings",
+        "description": "word2vec and GloVe.",
+        "module": "NM2"
+      },
+      {
+        "_id": "NL202",
+        "name": "RNNs and LSTMs",
+        "description": "Sequence modeling with recurrent networks.",
+        "module": "NM2"
+      }
+    ]
+  },
+  {
+    "_id": "NM3",
+    "name": "Transformers",
+    "description": "Attention and pretrained language models.",
+    "course": "CS6120",
+    "lessons": [
+      {
+        "_id": "NL301",
+        "name": "Attention and Transformers",
+        "description": "Self-attention and the transformer architecture.",
+        "module": "NM3"
+      },
+      {
+        "_id": "NL302",
+        "name": "Pretraining and Fine-tuning",
+        "description": "BERT, GPT and transfer learning.",
+        "module": "NM3"
+      }
+    ]
   }
 ]

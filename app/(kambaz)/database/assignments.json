@@ -133,5 +133,32 @@
     "points": 100,
     "due": "2026-06-03",
     "available": "2026-05-27"
+  },
+  {
+    "_id": "NLA1",
+    "title": "A1 - N-gram Language Model",
+    "course": "CS6120",
+    "description": "Build a smoothed n-gram language model and report perplexity on held-out text.",
+    "points": 100,
+    "due": "2026-09-30",
+    "available": "2026-09-16"
+  },
+  {
+    "_id": "NLA2",
+    "title": "A2 - Text Classification",
+    "course": "CS6120",
+    "description": "Train and compare a Naive Bayes classifier and a neural classifier on a sentiment dataset.",
+    "points": 100,
+    "due": "2026-10-28",
+    "available": "2026-10-14"
+  },
+  {
+    "_id": "NLA3",
+    "title": "A3 - Fine-tuning a Transformer",
+    "course": "CS6120",
+    "description": "Fine-tune a pretrained transformer for a downstream task and analyze its errors.",
+    "points": 100,
+    "due": "2026-11-25",
+    "available": "2026-11-11"
   }
 ]

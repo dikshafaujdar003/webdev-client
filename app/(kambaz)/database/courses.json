@@ -58,5 +58,17 @@
     "description": "An introduction to the structure, properties, and reactions of carbon-based compounds.",
     "image": "/images/reactjs.jpg",
     "term": "Spring 2023"
+  },
+  {
+    "_id": "CS6120",
+    "name": "Natural Language Processing",
+    "number": "CS6120",
+    "startDate": "2026-09-08",
+    "endDate": "2026-12-15",
+    "department": "Khoury",
+    "credits": 4,
+    "description": "Text processing, language models, word embeddings, sequence models and transformers for tasks such as classification, tagging and generation.",
+    "image": "/images/cs6120.jpg",
+    "term": "Fall 2026"
   }
 ]
