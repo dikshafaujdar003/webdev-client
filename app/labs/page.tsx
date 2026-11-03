@@ -26,8 +26,13 @@ export default function Labs() {
         </li>
         <li>
           <Link href="/labs/lab4" id="wd-lab4-link">
-            Lab 4
+            Lab 4: Client State
           </Link>
+          {" "}(
+          <Link href="/labs/lab4/hooks">Custom Hooks</Link>,{" "}
+          <Link href="/labs/lab4/url-encoding/query-params?a=5&b=10">Query Params</Link>,{" "}
+          <Link href="/labs/lab4/url-encoding/path-params/5/10">Path Params</Link>
+          )
         </li>
         <li>
           <Link href="/labs/lab5" id="wd-lab5-link">

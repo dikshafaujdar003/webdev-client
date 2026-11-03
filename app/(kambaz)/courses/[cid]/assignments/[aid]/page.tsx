@@ -1,13 +1,35 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
-import * as db from "../../../../database";
+import { useParams, useRouter } from "next/navigation";
+import {
+  emptyAssignment,
+  useAssignmentsStore,
+  type Assignment,
+} from "../../../../store/assignmentsStore";
 
-export default async function AssignmentEditor({
-  params,
-}: {
-  params: Promise<{ cid: string; aid: string }>;
-}) {
-  const { cid, aid } = await params;
-  const assignment = db.assignments.find((a) => a._id === aid);
+// On my own (§4.10.6): "new" creates an assignment, any other id edits that one
+export default function AssignmentEditor() {
+  const { cid: cidParam, aid: aidParam } = useParams();
+  const cid = String(cidParam);
+  const aid = String(aidParam);
+  const router = useRouter();
+  const existing = useAssignmentsStore((state) => state.findAssignment(aid));
+  const addAssignment = useAssignmentsStore((state) => state.addAssignment);
+  const updateAssignment = useAssignmentsStore((state) => state.updateAssignment);
+  const [assignment, setAssignment] = useState<Assignment>(
+    existing
+      ? { ...existing, until: existing.until ?? existing.due }
+      : { ...emptyAssignment, course: cid },
+  );
+  const save = () => {
+    if (existing) {
+      updateAssignment(assignment);
+    } else {
+      addAssignment({ ...assignment, course: cid });
+    }
+    router.push(`/courses/${cid}/assignments`);
+  };
   const input = "w-full rounded border border-neutral-300 px-3 py-2";
   const label = "block mb-1 font-medium";
   return (
@@ -18,8 +40,8 @@ export default async function AssignmentEditor({
         </label>
         <input
           id="wd-name"
-          key={aid}
-          defaultValue={assignment?.title ?? ""}
+          value={assignment.title}
+          onChange={(e) => setAssignment({ ...assignment, title: e.target.value })}
           className={input}
         />
         {/* With AI */}
@@ -35,7 +57,10 @@ export default async function AssignmentEditor({
         <textarea
           id="wd-description"
           rows={5}
-          defaultValue={assignment?.description ?? ""}
+          value={assignment.description}
+          onChange={(e) =>
+            setAssignment({ ...assignment, description: e.target.value })
+          }
           className={input}
         />
       </div>
@@ -44,7 +69,15 @@ export default async function AssignmentEditor({
         <label htmlFor="wd-points" className={label}>
           Points
         </label>
-        <input id="wd-points" defaultValue={assignment?.points ?? 100} className={input} />
+        <input
+          id="wd-points"
+          type="number"
+          value={assignment.points}
+          onChange={(e) =>
+            setAssignment({ ...assignment, points: parseInt(e.target.value) || 0 })
+          }
+          className={input}
+        />
       </div>
 
       <div className="mb-3">
@@ -123,7 +156,8 @@ export default async function AssignmentEditor({
         <input
           type="date"
           id="wd-due-date"
-          defaultValue={assignment?.due}
+          value={assignment.due}
+          onChange={(e) => setAssignment({ ...assignment, due: e.target.value })}
           className={input}
         />
       </div>
@@ -135,7 +169,10 @@ export default async function AssignmentEditor({
         <input
           type="date"
           id="wd-available-from"
-          defaultValue={assignment?.available}
+          value={assignment.available}
+          onChange={(e) =>
+            setAssignment({ ...assignment, available: e.target.value })
+          }
           className={input}
         />
       </div>
@@ -147,7 +184,8 @@ export default async function AssignmentEditor({
         <input
           type="date"
           id="wd-available-until"
-          defaultValue={assignment?.due}
+          value={assignment.until ?? ""}
+          onChange={(e) => setAssignment({ ...assignment, until: e.target.value })}
           className={input}
         />
       </div>
@@ -162,13 +200,14 @@ export default async function AssignmentEditor({
         >
           Cancel
         </Link>
-        <Link
-          href={`/courses/${cid}/assignments`}
+        <button
+          type="button"
+          onClick={save}
           id="wd-save"
-          className="rounded bg-red-600 px-4 py-2 text-sm font-medium text-white no-underline"
+          className="rounded bg-red-600 px-4 py-2 text-sm font-medium text-white"
         >
           Save
-        </Link>
+        </button>
       </div>
     </div>
   );
