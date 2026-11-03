@@ -17,7 +17,7 @@ export default function Dashboard() {
   const updateCourse = useCoursesStore((state) => state.updateCourse);
   const [course, setCourse] = useState<Course>(emptyCourse);
   const { currentUser } = useAccountContext();
-  // On my own (§4.10.7): enrollments come from the store so Enroll/Unenroll persist
+  // On my own (4.10.7): enrollments come from the store so Enroll/Unenroll persist
   const enrollments = useEnrollmentsStore((state) => state.enrollments);
   const enroll = useEnrollmentsStore((state) => state.enroll);
   const unenroll = useEnrollmentsStore((state) => state.unenroll);
@@ -39,7 +39,7 @@ export default function Dashboard() {
     <div id="wd-dashboard">
       <h1 id="wd-dashboard-title" className="flex items-center justify-between">
         Dashboard
-        {/* On my own (§4.10.7; the With AI prompt adds this same toggle, so it is not repeated) */}
+        {/* On my own (4.10.7; the With AI prompt adds this same toggle, so it is not repeated) */}
         {currentUser && (
           <button
             type="button"

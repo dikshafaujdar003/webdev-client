@@ -8,7 +8,7 @@ import {
   type Assignment,
 } from "../../../../store/assignmentsStore";
 
-// On my own (§4.10.6): "new" creates an assignment, any other id edits that one
+// On my own (4.10.6): "new" creates an assignment, any other id edits that one
 export default function AssignmentEditor() {
   const { cid: cidParam, aid: aidParam } = useParams();
   const cid = String(cidParam);

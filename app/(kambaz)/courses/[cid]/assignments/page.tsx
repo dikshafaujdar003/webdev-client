@@ -6,7 +6,7 @@ import { FaPlus, FaSearch } from "react-icons/fa";
 import AssignmentItem from "./AssignmentItem";
 import { useAssignmentsStore } from "../../../store/assignmentsStore";
 
-// On my own (§4.10.6): assignments come from the store, filtered by cid
+// On my own (4.10.6): assignments come from the store, filtered by cid
 export default function Assignments() {
   const { cid } = useParams();
   const courseId = String(cid);

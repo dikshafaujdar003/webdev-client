@@ -26,7 +26,7 @@ export default function AssignmentItem({
         </Link>
         <div className="mt-1 text-sm text-neutral-600">{details}</div>
       </div>
-      {/* On my own (§4.10.6) */}
+      {/* On my own (4.10.6) */}
       <FaTrash
         className="wd-delete-assignment mt-1 shrink-0 cursor-pointer text-red-600"
         onClick={onDelete}

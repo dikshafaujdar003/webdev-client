@@ -65,7 +65,7 @@ export default function CourseCard({
           >
             Delete
           </button>
-          {/* On my own (§4.10.7) */}
+          {/* On my own (4.10.7) */}
           {onToggleEnrollment && (
             <button
               type="button"

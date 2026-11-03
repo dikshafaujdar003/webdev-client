@@ -19,7 +19,7 @@ export default function CoursesLayout({
   const courses = useCoursesStore((state) => state.courses);
   const course = courses.find((c) => c._id === courseId);
   const [showCourseNav, setShowCourseNav] = useState(true);
-  // On my own (§4.10.7): a signed-in user who is not enrolled goes back to the Dashboard
+  // On my own (4.10.7): a signed-in user who is not enrolled goes back to the Dashboard
   const { currentUser } = useAccountContext();
   const enrollments = useEnrollmentsStore((state) => state.enrollments);
   const router = useRouter();

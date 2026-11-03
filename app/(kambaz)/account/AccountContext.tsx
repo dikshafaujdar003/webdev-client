@@ -5,7 +5,7 @@ import usersJson from "../database/users.json";
 
 export type User = (typeof usersJson)[number];
 
-// On my own (§4.10.7): the blank user the People table starts its form from
+// On my own (4.10.7): the blank user the People table starts its form from
 export const emptyUser: User = {
   _id: "",
   username: "",

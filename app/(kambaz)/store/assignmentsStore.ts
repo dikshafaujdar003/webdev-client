@@ -3,7 +3,7 @@
 import { create } from "zustand";
 import assignmentsJson from "../database/assignments.json";
 
-// On my own (§4.10.6)
+// On my own (4.10.6)
 export type Assignment = (typeof assignmentsJson)[number] & { until?: string };
 
 export const emptyAssignment: Assignment = {

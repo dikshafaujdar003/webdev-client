@@ -6,7 +6,7 @@ import * as db from "../../../../database";
 import { emptyUser, type User } from "../../../../account/AccountContext";
 import { useEnrollmentsStore } from "../../../../store/enrollmentsStore";
 
-// On my own (§4.10.7): the roster reads the enrollments store, and new people start from emptyUser
+// On my own (4.10.7): the roster reads the enrollments store, and new people start from emptyUser
 export default function PeopleTable() {
   const { cid } = useParams();
   const courseId = String(cid);

@@ -3,7 +3,7 @@
 import { create } from "zustand";
 import enrollmentsJson from "../database/enrollments.json";
 
-// On my own (§4.10.7)
+// On my own (4.10.7)
 export type Enrollment = (typeof enrollmentsJson)[number];
 
 type EnrollmentsStore = {
