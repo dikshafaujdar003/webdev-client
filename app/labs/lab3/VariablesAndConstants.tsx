@@ -3,8 +3,8 @@ export default function VariablesAndConstants() {
   let blockScoped = 5;
   const constant1 = functionScoped - blockScoped;
   // On my own
-  let myName = "Diksha";
-  const greeting = `Hello, ${myName}!`;
+  let myName = "Diksha Faujdar";
+  const greeting = `Hello!, ${myName}!`;
   // With AI
   const sampleSum = functionScoped + blockScoped;
   return (
